@@ -118,14 +118,12 @@ def saque():
 
 
 # EXTRATO
-
 @app.route("/extrato")
 def extrato():
     return "<h1>Extrato</h1>"
 
 
 # PERFIL
-
 @app.route("/perfil")
 def perfil():
     return "<h1>Perfil UrsoBank</h1>"
