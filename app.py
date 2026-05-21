@@ -1,5 +1,4 @@
 from flask import Flask, render_template
-import os
 
 app = Flask(__name__)
 
@@ -19,6 +18,29 @@ def extrato():
 def transferir():
     return render_template("transferir.html")
 
+@app.route("/pix")
+def pix():
+    return render_template("pix.html")
+
+@app.route("/saque")
+def saque():
+    return render_template("saque.html")
+
+@app.route("/login")
+def login():
+    return render_template("login.html")
+
+@app.route("/cadastro")
+def cadastro():
+    return render_template("cadastro.html")
+
+@app.route("/dashboard")
+def dashboard():
+    return render_template("dashboard.html")
+
+@app.route("/admin")
+def admin():
+    return render_template("admin.html")
+
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 8080))
-    app.run(host="0.0.0.0", port=port)
+    app.run(host="0.0.0.0", port=3333)
