@@ -1,90 +1,9 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-
-<title>UrsoBank</title>
-
-<style>
-
-body{
-background:#050b1a;
-font-family:Arial;
-display:flex;
-justify-content:center;
-align-items:center;
-height:100vh;
-margin:0;
-}
-
-.box{
-background:#0b1220;
-padding:40px;
-border-radius:25px;
-width:320px;
-text-align:center;
-}
-
-input{
-width:100%;
-padding:15px;
-margin-top:15px;
-border:none;
-border-radius:12px;
-background:#111827;
-color:white;
-}
-
-button{
-width:100%;
-padding:15px;
-margin-top:20px;
-border:none;
-border-radius:12px;
-background:#2563eb;
-color:white;
-}
-
-a{
-color:#60a5fa;
-text-decoration:none;
-}
-
-h1{
-color:white;
-}
-
-</style>
-
-</head>
-
-<body>
-
-<div class="box">
-
-<h1>🐻 UrsoBank</h1>
+<h1>Login UrsoBank</h1>
 
 <form action="/login" method="POST">
-
 <input type="text" name="user" placeholder="Usuário">
-
 <input type="password" name="password" placeholder="Senha">
-
-<button>
-ENTRAR
-</button>
-
+<button type="submit">Entrar</button>
 </form>
 
-<br>
-
-<a href="/cadastro">
-
-Criar conta
-
-</a>
-
-</div>
-
-</body>
-</html>
+<a href="/cadastro">Cadastrar</a>
