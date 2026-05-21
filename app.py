@@ -27,4 +27,20 @@ def saque():
     return render_template("saque.html")
 
 @app.route("/login")
-def
+def login():
+    return render_template("login.html")
+
+@app.route("/cadastro")
+def cadastro():
+    return render_template("cadastro.html")
+
+@app.route("/dashboard")
+def dashboard():
+    return render_template("dashboard.html")
+
+@app.route("/admin")
+def admin():
+    return render_template("admin.html")
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=3333)
