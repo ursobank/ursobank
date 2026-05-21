@@ -1,11 +1,14 @@
 from flask import Flask, render_template, request, redirect
+import os
 
 app = Flask(__name__)
 
 usuarios = {}
+
 saldo = {
     "admin": 100
 }
+
 
 # LOGIN
 
@@ -68,66 +71,4 @@ def pix():
 @app.route("/saque", methods=["GET", "POST"])
 def saque():
 
-    usuario = "admin"
-
-    if request.method == "POST":
-
-        valor = float(request.form["valor"])
-
-        if saldo[usuario] >= valor:
-
-            saldo[usuario] -= valor
-
-            return f"""
-
-            <body style='background:#050b1a;color:white;font-family:Arial;padding:30px'>
-
-            <h1>✅ Saque realizado</h1>
-
-            <h2>Valor: R$ {valor}</h2>
-
-            <h3>Saldo restante: R$ {saldo[usuario]}</h3>
-
-            <a href='/dashboard' style='color:#60a5fa'>
-            Voltar
-            </a>
-
-            </body>
-
-            """
-
-        else:
-
-            return """
-
-            <body style='background:#050b1a;color:white;font-family:Arial;padding:30px'>
-
-            <h1>❌ Saldo insuficiente</h1>
-
-            <h3>Você não possui saldo para sacar.</h3>
-
-            <a href='/saque' style='color:#60a5fa'>
-            Voltar
-            </a>
-
-            </body>
-
-            """
-
-    return render_template("saque.html")
-
-
-# EXTRATO
-@app.route("/extrato")
-def extrato():
-    return "<h1>Extrato</h1>"
-
-
-# PERFIL
-@app.route("/perfil")
-def perfil():
-    return "<h1>Perfil UrsoBank</h1>"
-
-
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=3333)
+    usuario = "admin
