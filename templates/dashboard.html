@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>UrsoBank</title>
+
+<style>
+
+body{
+background:#050b1a;
+font-family:Arial;
+margin:0;
+color:white;
+}
+
+.topo{
+background:#0b1220;
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+font-size:30px;
+font-weight:bold;
+border-bottom:1px solid #1e293b;
+}
+
+.logo{
+color:#3b82f6;
+}
+
+.usuario{
+background:#2563eb;
+padding:10px 15px;
+border-radius:12px;
+}
+
+.area{
+padding:20px;
+}
+
+.boasvindas{
+font-size:38px;
+font-weight:bold;
+}
+
+.sub{
+color:#94a3b8;
+margin-top:5px;
+}
+
+.saldo{
+margin-top:25px;
+background:linear-gradient(135deg,#3b82f6,#2563eb);
+padding:30px;
+border-radius:30px;
+}
+
+.saldo h2{
+color:#cbd5e1;
+margin:0;
+font-size:20px;
+}
+
+.saldo h1{
+font-size:60px;
+margin-top:15px;
+}
+
+.info{
+display:flex;
+gap:15px;
+margin-top:20px;
+}
+
+.info div{
+background:rgba(255,255,255,0.1);
+padding:15px;
+border-radius:15px;
+flex:1;
+}
+
+.grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px;
+margin-top:25px;
+}
+
+.card{
+background:#0b1220;
+padding:25px;
+border-radius:20px;
+border:1px solid #1e293b;
+}
+
+.card a{
+text-decoration:none;
+color:white;
+}
+
+.card h3{
+margin:10px 0 5px 0;
+font-size:30px;
+}
+
+.card p{
+color:#94a3b8;
+}
+
+.transacoes{
+margin-top:30px;
+background:#0b1220;
+padding:20px;
+border-radius:25px;
+border:1px solid #1e293b;
+}
+
+.tx{
+background:#111827;
+padding:18px;
+border-radius:18px;
+margin-top:15px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.valor{
+color:#22c55e;
+font-size:28px;
+font-weight:bold;
+}
+
+.menu{
+position:fixed;
+bottom:0;
+width:100%;
+background:#0b1220;
+display:flex;
+justify-content:space-around;
+padding:15px 0;
+border-top:1px solid #1e293b;
+}
+
+.menu div{
+text-align:center;
+color:white;
+font-size:14px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="topo">
+
+<div>
+🐻 <span class="logo">UrsoBank</span>
+</div>
+
+<div class="usuario">
+U
+</div>
+
+</div>
+
+<div class="area">
+
+<div class="boasvindas">
+Olá 👋
+</div>
+
+<div class="sub">
+Bem-vindo ao UrsoBank
+</div>
+
+<div class="saldo">
+
+<h2>SALDO DISPONÍVEL</h2>
+
+<h1>R$ 0,00</h1>
+
+<div class="info">
+
+<div>
+
+BLOQUEADO
+
+<h3>R$ 0,00</h3>
+
+</div>
+
+<div>
+
+STATUS
+
+<h3>Padrão</h3>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="grid">
+
+<div class="card">
+
+<a href="/pix">
+
+<h3>💸</h3>
+
+<h2>Depositar</h2>
+
+<p>Via PIX</p>
+
+</a>
+
+</div>
+
+<div class="card">
+
+<a href="/saque">
+
+<h3>🏧</h3>
+
+<h2>Sacar</h2>
+
+<p>Via PIX</p>
+
+</a>
+
+</div>
+
+</div>
+
+<div class="transacoes">
+
+<h2>📄 Últimas Transações</h2>
+
+<div class="tx">
+
+<div>
+
+<h3>Depósito PIX</h3>
+
+<p>Hoje</p>
+
+</div>
+
+<div class="valor">
+
++R$ 9,23
+
+</div>
+
+</div>
+
+<div class="tx">
+
+<div>
+
+<h3>Transferência</h3>
+
+<p>Hoje</p>
+
+</div>
+
+<div class="valor">
+
++R$ 20,00
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="menu">
+
+<div>
+🏠
+<br>
+Início
+</div>
+
+<div>
+💸
+<br>
+Depositar
+</div>
+
+<div>
+🏧
+<br>
+Sacar
+</div>
+
+<div>
+📄
+<br>
+Extrato
+</div>
+
+</div>
+
+</body>
+</html>
