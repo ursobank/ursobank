@@ -119,9 +119,7 @@ def transferir():
     return render_template("transferir.html")
 
 
-if __name__ == "__main__":
 
-    port = int(os.environ.get("PORT", 3333))
 
    if __name__ == "__main__":
     app.run(host="0.0.0.0", port=3333)
